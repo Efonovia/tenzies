@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #0B2434;
+    padding: 20px;
+    font-family: Poppins;
+}
+
+main {
+    margin: auto;
+    background: #F5F5F5;
+    width: 800px;
+    height: 400px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score-board {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 100px;
+    left: 183px;
+    background: #F5F5F5;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.score {
+    font-size: 50px;
+    color: #5035FF;
+}
+
+.time-board {
+    background: #F5F5F5;
+    height: 100px;
+    width: 140px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 100px;
+    left: 1083px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.time {
+    font-size: 50px;
+    color: #5035FF;
+}
+
+.title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.instructions {
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dice-container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 20px;
+}
+
+.die-face5, .die-face3 {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.die-face6, .die-face4 {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    display: grid;
+    grid-template: auto auto/ repeat(2, 20px);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.die-face2, .die-face1 {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.die-num {
+    height: 10px;
+    width: 10px;
+    /* border-radius: 50%;
+    background-color: black; */
+    /* margin: auto; */
+}
+
+.roll-dice {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Poppins;
+    cursor: pointer;
+}
+
+.roll-dice:focus {
+    outline: none;
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.records-container {
+    height: 90vh;
+    width: 50vw;
+    background-color: yellow;
+    margin: auto;
+}
+
+.records-menu {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.records-menu > div {
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5035FF;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.records-menu > div:hover {
+    background-color: #e5e2f8;
+}
+
+.records-list {
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.record {
+    position: relative;
+    bottom: -20px;
+    margin-left: 10%;
+}
+
+.roll-records {
+    color: #5035FF;
+    font-size: 50px;
+}
+
+.time-records {
+    color: #5035FF;
+    font-size: 40px;
+}
+
+.player-name {
+    color: #5035FF;
+    font-size: 40px;
+}
+
+.date {
+    color: #5035FF;
+    font-size: 20px;
+}
+
+.records-list::-webkit-scrollbar {
+    width: 7px;
+}
+.records-list::-webkit-scrollbar-track {
+    background: hsla(234, 66%, 66%, 0.219)
+}
+.records-list::-webkit-scrollbar-thumb {
+    background: hsla(246, 84%, 42%, 0.397);
+}
+.records-list::-webkit-scrollbar-thumb:hover {
+    background: hsla(246, 84%, 42%, 0.897);
+}
+
+.stats {
+    height: 50px;
+    width: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.back {
+    height: 50px;
+    width: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
